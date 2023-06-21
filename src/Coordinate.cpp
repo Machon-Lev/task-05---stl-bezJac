@@ -16,7 +16,7 @@ bool Coordinate::operator<(const Coordinate& other) const {
 	}
 }
 
-bool Coordinate::operator!=(const Coordinate other) const
+bool Coordinate::operator!=(const Coordinate& other) const
 {
 	return _x != other._x && _y != other._y;
 }

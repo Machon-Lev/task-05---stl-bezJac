@@ -74,7 +74,7 @@ int main() {
 				[&distancePredicates, algorithm_choice, input_city_coordinates](const auto& pair) {
 					return std::make_pair(distancePredicates.at(algorithm_choice)(input_city_coordinates, pair.first), pair.second);
 				});
-
+			
 			cities_north_to_city_count = std::count_if(coordinates_to_city.begin(), coordinates_to_city.end(),
 				[&input_city_coordinates](const auto& pair) {
 					return pair.first._y < input_city_coordinates._y;
